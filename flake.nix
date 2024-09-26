@@ -63,6 +63,14 @@
         '';
         path = ./empty;
       };
+      empty-prettier = mkWelcomeText {
+        name = "Empty Template w/ Prettier";
+        description = ''
+          A simple flake that provides a devshell 
+          and Prettier configuration
+        '';
+        path = ./empty-prettier;
+      };
       rust = mkWelcomeText {
         path = ./rust;
         name = "Rust Template";

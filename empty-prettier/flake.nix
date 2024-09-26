@@ -15,7 +15,9 @@
       system: let
         pkgs = nixpkgs.legacyPackages.${system};
 
-        nativeBuildInputs = with pkgs; [];
+        nativeBuildInputs = with pkgs; [
+          nodePackages_latest.prettier
+        ];
         buildInputs = nativeBuildInputs;
         shellHook = "";
       in {
